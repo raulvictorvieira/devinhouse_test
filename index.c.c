@@ -3,7 +3,7 @@
 
 int main(){
     int i, in;
-    float notas[5], maior, menor, intermed[3];
+    float notas[5], maior, menor, intermed[3], media;
     char atleta[20];
 
     system("cls");
@@ -37,8 +37,11 @@ int main(){
         }
     }
 
+    media = (intermed[0] + intermed[1] + intermed[2]) / 3;
+
     printf("A maior nota do atleta %s foi %.1f \n", atleta, maior);
     printf("A menor nota do atleta %s foi %.1f \n", atleta, menor);
-    printf("As notas intermediarias sao: %.1f, %.1f e %.1f.", intermed[0], intermed[1], intermed[2]);
+    printf("As notas intermediarias sao: %.1f, %.1f e %.1f\n", intermed[0], intermed[1], intermed[2]);
+    printf("A media das notas intermediarias e: %.1f", media);
     return(0);
 }
